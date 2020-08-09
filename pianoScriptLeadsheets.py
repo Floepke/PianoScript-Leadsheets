@@ -1109,7 +1109,7 @@ def engrave():
     else:
         h = paperformat[0] * (root.winfo_fpixels('1m'))
         w = paperformat[1] * (root.winfo_fpixels('1m'))
-    root.CanvasPage.create_rectangle(55, 55, w + 5, h + 5, fill='black'), root.CanvasPage.create_rectangle(50, 50, w, h, fill='#fafff5', outline='white')
+    root.CanvasPage.create_rectangle(55, 55, w + 5, h + 5, fill='black'), root.CanvasPage.create_rectangle(50, 50, w, h, fill='white', outline='white')
 
 
     # Clear lists for every new render.
