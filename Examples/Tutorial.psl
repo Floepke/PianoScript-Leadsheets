@@ -1,0 +1,53 @@
+\Tutorial
+\PianoScript Leadsheet
+\copyright PianoScript 2020
+
+\music
+1;88;Full sized piano keyboard on which key 1 and 88 are written!;;
+f2 e-3;a3 e-;F7;
+c+3 g+3;f a- c+5;Q;
+f2 e-3;a3 e-;F7;
+c+3 g+3;f a- c+5;Q;
+f2 e-3;a3 e-;F7;
+c+3 g+3;f a- c+5;Q;
+
+_________________________________________
+
+This is the place to put notes or maybe lyrics. It is not engraving anything on the paper. So you can write anything on the bottom of the file but not in between the chords!
+
+###########
+TUTORIAL
+This is a tutorial file in which we will explain the diagram and how to write a leadsheet file. Above the line you can write the chords.
+
+###########
+THE DIAGRAM
+The diagram is in fact a minimap of the real piano keyboard. The vertical lines are representing the black keys of the piano. The dashed lines are the 'clef' of the diagram. That is where the central octave(octave 4) starts. So every group of two lines are the c#/db and d#/eb keys. The groups of three(slightly thicker) are the f#/gb, g#/ab and a#/bb keys, just like how your keyboard looks. But you don't have to learn the notenames to read it. Your job is to press the keys on the keyboard which are written on and in between the lines. 
+
+Every black key is written on the corresponding black key and above the stem and is also black. Every white note is written in between the lines and is also white. For example |o|  | is always a 'g'. To know which 'g' you have to play you look at the dashed line on which you refer the right 'g' key.
+
+###########
+HOW TO WRITE A LEADSHEET
+A file starts with 4 backslashes. after each backslash you can put 'title', 'composer', 'copyright notice' and below the fourth backslash you can write the chords.(look to the tutorial example)
+A chord has 4 entry's splitted by ';' :
+lefthand;righthand;chordname;positionoffsetx
+A example chords could look like:
+f2 e-3;a3 e-;F7; -20
+In this case you placed the diagram 20 pixels to the left. if you type '20' it will go 20 to the right. leave it blank to use the automatic placement. Every chord is on a new line in the file, don't do this:(x)
+f2 e-3;a3 e-;F7; f2 e-3;a3 e-;F7;
+Do it like this:
+f2 e-3;a3 e-;F7;
+f2 e-3;a3 e-;F7;
+
+1. Try to copy the above example chord and place it on the right place in the file. If you did right the chord is on the paper! (remember a new chord is a new line)
+2. Try to move the chord to the right side of the paper using the offset.
+3. Write your own chord. (tip: first type ;;; and place the notenames in the right places)
+
+###########
+FORMATS
+You can use the following notation to give the pitch. Below w will write c4, c#4 and db4:
+(a Pianokeynumbers(1-88); The piano has 88 keys, for example c4 is always key 40. <40 41 41>
+(b American notation; <c4 c#4 db4>
+(c +-; <c4 c+4 d-4>
+(d Capitalized = sharp; <c4 C4 ->
+(e If no octavenumber the app chooses octave 4
+(f PianoScript QWXYZ system; <c4 q4 -> The white keys have their own name but the black don't(that's racist!). So the black keys can have also their own name in PianoScript.

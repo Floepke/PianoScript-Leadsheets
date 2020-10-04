@@ -1,0 +1,36 @@
+\\Tutorial
+\\PianoScript
+\\copyright PianoScript 2020
+
+\\music:
+1;88;Full sized keyboard (You can use piano-key-numbers 1-88);
+
+c e;g c5;C (writing '~' behind the chord will move it to the next line);~
+
+f3 e-;a- c5;Fm7 (x offset 350p);350
+
+28 35 42;38 43 47;Cm9 (crosshand: the dotted notes are for the right hand);~
+
+q3 b3;q f y;Q7 (qw xyz notation: use these names because every key should have their own name);~
+
+c3 g3;b3 e g;Cmaj7 (Final chord);~
+
+c e;g c5;The tutorial sequense: [4/4];~
+f3 e-;a- c5;;-5
+28 35 42;38 43 47;...measure 2;
+q3 b3;q f y;[2/4];
+c3 g3;b3 e g;[4/4];
+
+
+
+_________________________________________
+notes
+
+Things we hoped you to learn:
+* Every chord must be written on a new line. 
+* The chord format is: (newline)
+lefthand;righthand;chordname;offsetx or ~(write on new line)
+* There are several ways of writing down the pitch. look in the Tutorial for more info.
+* In the last entry you can offset the x position or you can print it to the next line.
+* When two chords are written against each other they are in the same measure.
+* The title, composer and copyright headers are on top of the file, seperated by backslashes.
